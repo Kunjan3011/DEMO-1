@@ -60,6 +60,20 @@
         button:hover {
             background-color: #45a049;
         }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        button[type="submit"] {
+            flex: 1;
+        }
+        .refresh-btn {
+            background-color: #2196F3;
+            flex: 1;
+        }
+        .refresh-btn:hover {
+            background-color: #0b7dda;
+        }
     </style>
 </head>
 <body>
@@ -86,8 +100,16 @@
                 <textarea id="message" name="message" required></textarea>
             </div>
             
-            <button type="submit">Submit</button>
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="button" class="refresh-btn" onclick="refreshPage()">Refresh</button>
+            </div>
         </form>
     </div>
+    <script>
+        function refreshPage() {
+            location.reload();
+        }
+    </script>
 </body>
 </html>
