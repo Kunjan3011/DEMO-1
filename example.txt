@@ -1,0 +1,3 @@
+Hello, this is a text file in my Git repository!
+
+This file will be committed to GitHub.
